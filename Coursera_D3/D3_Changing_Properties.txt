@@ -1,0 +1,34 @@
+Changing Properties
+
+Attributes
+<img src = "logo.png" />
+
+Styles
+<p style="color:red" />
+
+API | selection.Attributes
+Syntax:
+selection
+    .attr(attribute, value)
+
+Example:
+
+d3.select("img")
+    .attr("src", "newLogo.png")
+
+---
+
+API | selection.style
+Syntax:
+selection
+    .style(property, value)
+
+Example:
+    d3.select("p")
+        .style("color", "red")
+
+NOTE: 
+1. selection.style is a easy way to set an specific 
+attribute called style. 
+2. selection.attr can change any attribute, 
+including the style attribute.

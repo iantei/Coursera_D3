@@ -1,0 +1,48 @@
+Transform
+
+Map
+
+JS API | array.Map
+
+Syntax:
+array.map(func)
+
+function(elm, index, arr)
+{
+    return newValue
+}
+
+Example:
+
+let ages = data.map(
+    function(client){
+        return client.age
+    }
+)
+
+
+Reduce
+
+data1 = [a1, a2, a3 ...]
+    
+JS API | array.Reduce
+Syntax:
+array.reduce (
+    reducer, 
+    initialValue
+)
+
+Reducer 
+function(
+    accumulator,
+    currValue,
+    index,
+    arr
+){
+    return 
+    
+Example:
+data = [1,2,3,4]
+data.reduce(function(acc, value){
+    return acc+value
+}, 3)

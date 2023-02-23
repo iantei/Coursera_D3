@@ -1,0 +1,37 @@
+Adding and Removing elements
+
+Add element
+<ul>
+    <li> Item 1 </li>
+    <li> Item 2 </li>
+    <li> Item 3 </li>
+</ul>
+
+API | selection.append
+
+Syntax:
+selection
+    .append(tag)
+
+Example:
+
+// Adding new item on the above example
+    d3.select("ul")
+        .append("li")
+        .text("Item 4")
+
+Updated from above example:
+<ul>
+    <li> Item 1 </li>
+    <li> Item 2 </li>
+    <li> Item 3 </li>
+    <li> Item 4 </li>
+</ul>
+
+
+API | selection.remove
+
+d3.selectAll("ul")
+    .remove("li")
+
+Removes all li items from above example

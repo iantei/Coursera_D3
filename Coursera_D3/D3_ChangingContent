@@ -1,0 +1,34 @@
+Changing content
+
+    selection.text  | This is used when there is no tags involved
+    selection.html  | This is used when there are tags involved
+
+Text
+<p> this is the content </p>
+
+Selection 
+
+let selection = 
+    d3.select("p")
+
+D3 API Pattern
+Get
+    something
+        .method()
+
+Set
+    something 
+            .method(value)
+
+Example: API | selection.text
+
+Syntax:
+selection
+    .text([text])
+
+Example:
+    d3.select("p")
+        .text("this is the content")
+
+
+

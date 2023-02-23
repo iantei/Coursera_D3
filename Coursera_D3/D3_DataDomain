@@ -1,0 +1,33 @@
+Data Domain
+
+Range:
+    minimum and maximum
+
+API | d3.max, d3.minimum
+
+Syntax: d3.max(data[, accessor])
+
+accessor -> function(d, idx)
+            {
+                // return value
+            }
+
+Example:
+
+d3.min(data, function(d)){
+    return d.age
+}
+
+
+d3.extend(data[, accessor])
+    returns [minimum, maximum]
+
+
+
+Sum and Mean
+
+d3.sum(data[,accessor])
+
+    function(d, idx){
+        // return value
+    }

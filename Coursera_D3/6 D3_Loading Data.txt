@@ -1,0 +1,34 @@
+Load Data in D3:
+
+Loading data from the server in D3 is an asynchronous process.
+    Therefore, we need a callback function to make this work.
+
+There are two versions of callback available.
+
+1. Prior to D3 v5
+    d3.csv (dataUrl, callback)
+2. D3 v5 onwards
+    We make use of Promise
+
+API | d3.csv | d3.json
+    Syntax:
+        d3.csv(dataUrl)
+            .then(callback)
+            .catch(errorHandler)
+        
+        d3.json(dataUrl)
+            .then(...)
+            .catch(...)
+
+Example:
+
+d3.csv("data.csv")
+    .then(function(data))
+    {
+        //do something
+    }
+
+Loading Data:
+    asynchronous
+    requires a server
+    automatically parsed

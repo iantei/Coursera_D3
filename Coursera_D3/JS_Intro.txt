@@ -1,0 +1,20 @@
+"let" is a new keyboard used to replace "var".
+
+let result = 3 >= 2
+let isEqual = months === 4;
+
+=== is Equal
+!== Not Equal
+>   Greater than
+<   Less than
+
+Functions
+    Reusing code
+
+function add(v1, v2) {
+    return v1 + v2
+}
+
+const add = (v1, v2) => v1 + v2;
+
+let result = add(5, 3);

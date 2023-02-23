@@ -1,0 +1,56 @@
+Visualization Steps:
+    1. Transform data
+    2. Map data to image space
+    3. Compute layout
+    4. Draw the chart
+
+D3 APIs
+
+1. Transform data  
+    d3.cross, d3.max - gives max value in the field.
+
+2. Map Data to Image space
+    d3.scaleLinear, d3.scaleTime
+
+3. Compute Layouts and Paths
+    d3.path, d3.treemap
+
+4. Draw the chart
+    d3.select, d3.append
+
+
+
+----
+D3 Selections
+    d3.select
+    d3.selectAll
+
+API | d3.select
+Syntax:
+    d3.select (selector)
+        If there are multiple selector, it selects the first element
+
+Example 2:
+    d3.select("p").select(".main")
+
+    Select the FIRST <p> element
+    Select the FIRST element with class main inside <p>
+
+Example 3:
+    let selection = d3
+        .select("p")
+        .select(".main")
+
+Syntax:
+    d3.selectAll(selector)
+
+    let selection = d3
+        .selectAll("p")
+        .selectAll(".main")
+    
+    Select ALL <p> elements;
+    Select ALL elements with class main inside each <p>
+
+    NOTE:: We are the returning D3 wrappers inside the function.
+
+The selection part is similar to CSS, we can also make usage of pseduo selectors

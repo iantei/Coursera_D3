@@ -1,0 +1,45 @@
+Filter
+
+1. JS API | array.Filter
+
+Syntax:
+    array.filter(func)
+
+Example:
+    data.filter(function(client){
+        return client.age < 25
+    })
+
+Example: listOfEmployees.filter(e=> e.department === "finance")
+
+NOTE: filter doesn't modify your original data, it keeps the original data intact.
+
+2.  Sorting
+JS API | array.Sorting
+Sorting modifies the original list
+Syntax:
+    array.sort(comparator)
+
+    comparator: 
+        function(a, b) {
+            // -1, 0 
+            or 1
+        }
+
+D3 has its own APIs | d3.ascending | d3.descending
+
+Syntax:
+    array.sort(d3.ascending)
+
+    array.sort(function(a, b)
+    {
+        return d3.descending(a, b)
+    })
+
+Example:
+    data.sort(function(c1, c2){
+        return d3.ascending(
+            c1.age,
+            c2.age
+        )
+    })
